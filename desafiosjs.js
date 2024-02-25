@@ -1,7 +1,7 @@
 // desafiosjs.js
 
 let currentLevel = 1;
-let score = 100;
+let score = 20;
 let hintUsed = false;
 
 const levelHints = {
@@ -26,7 +26,7 @@ function checkAnswer(level) {
         document.querySelector(`#level${level}`).style.display = 'none';
         goToNextLevel();
     } else {
-        score = Math.max(0, score - 30);
+        score = Math.max(0, score - 60);
 
         if (score <= 0) {
             alert('Você Perdeu! Tente Novamente :)');

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios</title>
+    <link rel="stylesheet" href="desafioscss.css">
+</head>
+<body>
+
+<div class="level-container">
+    <div class="level-number" id="levelCounter">Nível 1</div>
+
+    <div class="level-box" id="level1">
+        <img src="https://s2-techtudo.glbimg.com/U8WMjmFSgW660CeHM9UOnve0LuQ=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/po/tt2/f/original/2015/12/01/nokia-antigo-tijolao.jpg" alt="Imagem do Nível 1">
+        <p>3-33-7777-2-333-444-666<span id="secretWord1"></span></p>
+        <input type="text" placeholder="Digite a palavra-chave" id="userInput1">
+        <button class="submit-btn" onclick="checkAnswer(1)">Enviar</button>
+    </div>
+
+    <!-- Adicione mais níveis conforme necessário -->
+    <div class="level-box" id="level2" style="display: none;">
+        <img src="https://live.staticflickr.com/2390/2237795926_63648edbc1_b.jpg" alt="Imagem do Nível 2">
+        <p>VLAVAAV<span id="secretWord2"></span></p>
+        <input type="text" placeholder="Digite a palavra-chave" id="userInput2">
+        <button class="submit-btn" onclick="checkAnswer(2)">Enviar</button>
+    </div>
+
+    <div class="level-box" id="level3" style="display: none;">
+        <img src="https://i.pinimg.com/564x/91/b7/23/91b72327e7aefa3f3027b785d55f357e.jpg" alt="Imagem do Nível 2">
+        <p>40 km/h<span id="secretWord2"></span></p>
+        <input type="text" placeholder="Digite a palavra-chave" id="userInput2">
+        <button class="submit-btn" onclick="checkAnswer(2)">Enviar</button>
+    </div>
+
+    <div class="score">Pontuação: 20</div>
+
+    <button class="hint-btn" onclick="showHint()">?</button>
+
+    <div class="hint-popup" id="hintPopup">
+        <p id="hintText">Dica: Uma dica especial para ajudar você!</p>
+        <button onclick="closeHint()">Fechar</button>
+    </div>
+</div>
+
+<script src="desafiosjs.js"></script>
+</body>
+</html>

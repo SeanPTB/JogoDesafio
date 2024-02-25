@@ -1,0 +1,80 @@
+/* desafioscss.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.level-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/c5/dc/94/c5dc943a3febbe0ffc8e9c60d3f7d270.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.level-box {
+    border: 5px solid #fff;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.level-number {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 18px;
+}
+
+.hint-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: yellow;
+    border: none;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hint-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.level-box img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
